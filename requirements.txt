@@ -1,0 +1,17 @@
+#python 3.8
+Cython
+spleeter
+librosa
+madmom  
+pretty_midi
+music21
+click
+fastapi
+uvicorn
+youtube_dl
+numpy<1.24
+scipy
+pydub
+requests
+pytube
+simpleaudio
