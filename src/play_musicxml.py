@@ -16,7 +16,7 @@ PART_SAMPLES = {
 
 def load_samples(sample_dir: Path, part_map: dict) -> dict:
     """
-    Load WAVs, returning part-name -> WaveObject.
+Load WAVs, returning part-name -> WaveObject.
     """
     waves = {}
     for part_name, fname in part_map.items():
@@ -99,6 +99,7 @@ def main(xml_path: str, samples_dir: str):
 
     print(f"🔊 Loading samples from: {sample_dir}")
     waves = load_samples(sample_dir, PART_SAMPLES)
+    print(f"✅ Loaded {len(waves)} samples")
 
     bpm, qsec = get_tempo_and_qsec(score)
     print(f"⏱ Tempo: {bpm} BPM, quarter-note = {qsec:.3f}s")

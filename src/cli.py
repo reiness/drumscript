@@ -2,7 +2,7 @@ import os
 import click
 from pathlib import Path
 import time
-from src.separate_drums import isolate_drums
+from src.separate import isolate_drums
 from src.transcribe_drums import transcribe
 from src.build_midi import events_to_midi
 from src.build_musicxml import midi_to_musicxml

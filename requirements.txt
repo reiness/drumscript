@@ -15,3 +15,5 @@ pydub
 requests
 pytube
 simpleaudio
+demucs
+basic-pitch
